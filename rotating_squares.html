@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas class="root" height="800px" width="800px"></canvas>
+</body>
+
+<script>
+    var el = document.querySelector('.root');
+    var context = el.getContext('2d');
+
+    el.width = window.innerWidth;
+    el.height = window.innerHeight;
+
+    context.lineWidth = 2;
+
+    var NoOfLine = 50;
+
+    context.beginPath();
+    for (var i = 0; i < NoOfLine; i++) {
+        context.moveTo(0, i * 15);
+        context.lineTo(800, i * 15);
+
+        x = i * 15;
+        y = i * 15;
+    }
+    context.stroke();
+
+    for (var i = 0; i < )
+    // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/quadraticCurveTo
+
+    // context.save();
+    // // https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation
+    // context.globalCompositeOperation = 'destination-out';
+
+    // context.fillStyle = 'red';
+    // context.fill();    
+</script>
+
+</html>
