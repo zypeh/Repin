@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repin</title>
+    <link rel="stylesheet" href="vendors/codemirror-5.55.0/lib/codemirror.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="./editor.js"></script>
+    <script src="vendors/codemirror-5.55.0/lib/codemirror.js"></script>
+    <script src="vendors/codemirror-5.55.0/mode/haskell/haskell.js"></script>
+    <script src="https://unpkg.com/cm-resize@1"></script>
+</head>
+<body>
+    <div class="editor-guard">
+        <div>
+            <span>Test.hs</span>
+            <div id="code"></div>
+        </div>
+    </div>
+    <script>
+        var myCodeMirror = CodeMirror(document.getElementById('code'), {
+            lineNumbers: true,
+            mode: 'haskell'
+        });
+
+        myCodeMirror.setSize('870px', '100px')
+    </script>
+</body>
+</html>
